@@ -13,12 +13,12 @@ def lmao():  ##function for the notification##
 
 
 ##def job():
-    ##print("I am working")
+##print("I am working")
 
-
-schedule.every(10).seconds.do(lmao)
+if __name__ == "__main__":
+    schedule.every(10).seconds.do(lmao)
 ##Requires function to be passed after do##
-##
+
 while True:
     schedule.run_pending()
     time.sleep(1)
